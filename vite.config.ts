@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
   plugins: [vue()],
-  
+
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
@@ -17,5 +17,6 @@ export default defineConfig(async () => ({
       '@shared': path.resolve(__dirname, './src/shared'),
       '@stores': path.resolve(__dirname, './src/stores')
     }
-  }
+  },
+  outDir: 'dist',
 }))
