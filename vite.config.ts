@@ -18,5 +18,6 @@ export default defineConfig(async () => ({
       '@stores': path.resolve(__dirname, './src/stores')
     }
   },
+  base: '/',
   outDir: 'dist',
 }))
